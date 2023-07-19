@@ -4,13 +4,13 @@
 
 Your goal is to make a stack based programming language with the following functions/tokens:
 
-- start - Marks the start of the program.
-- end - Marks the end of the program, and returns the top element in the stack.
-- push x - Pushes the integer x into the stack.
-- add - Adds together the top two elements on the stack.
-- sub - Subtracts the top-most element by the second top-most element on the stack.
-- mul - Multiplies the top two elements on the stack.
-- div - Divides (integer division) the top-most element by the second top-most element on the stack.
+- `start` - Marks the start of the program.
+- `end` - Marks the end of the program, and returns the top element in the stack.
+- `push x` - Pushes the integer `x` into the stack.
+- `add` - Adds together the top two elements on the stack.
+- `sub` - Subtracts the top-most element by the second top-most element on the stack.
+- `mul` - Multiplies the top two elements on the stack.
+- `div` - Divides (integer division) the top-most element by the second top-most element on the stack.
 
 Demo:
 
@@ -34,7 +34,7 @@ The syntax should be like:
 (start)(push)(4)(push)(9)(div)(end)
 ```
 
-which returns 2 in this case.
+which returns `2` in this case.
 
 ## Task
 
@@ -49,7 +49,7 @@ See the example tests for more examples.
 
 ## Notes
 
-- Don't worry about division by 0. There won't be any test cases on that.
+- Don't worry about division by `0`. There won't be any test cases on that.
 
 - All input will be valid.
 

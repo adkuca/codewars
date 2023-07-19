@@ -57,22 +57,22 @@ BEFORE (people waiting in queues)               AFTER (people at their destinati
 - If it was going up then it may continue up to collect the highest floor person wanting to go down
 - If it was going down then it may continue down to collect the lowest floor person wanting to go up
 - The Lift has a maximum capacity of people
-- When called, the Lift will stop at a floor even if it is full, although unless somebody gets off nobody else can get on!
+- When called, the Lift will stop at a floor **even if it is full**, although unless somebody gets off nobody else can get on!
 - If the lift is empty, and no people are waiting, then it will return to the ground floor
 
 ### People Rules
 
-- People are in "queues" that represent their order of arrival to wait for the Lift
+- People are in **"queues"** that represent their order of arrival to wait for the Lift
 - All people can press the UP/DOWN Lift-call buttons
-- Only people going the same direction as the Lift may enter it
-- Entry is according to the "queue" order, but those unable to enter do not block those behind them that can
+- Only people going the **same direction** as the Lift may enter it
+- Entry is according to the **"queue" order**, but those unable to enter do not block those behind them that can
 - If a person is unable to enter a full Lift, they will press the UP/DOWN Lift-call button again after it has departed without them
 
 ---
 
 ## Kata Task
 
-- Get all the people to the floors they want to go to while obeying the Lift rules and the People rules
+- Get all the people to the floors they want to go to while obeying the **Lift rules** and the **People rules**
 - Return a list of all floors that the Lift stopped at (in the order visited!)
 
 NOTE: The Lift always starts on the ground floor (and people waiting on the ground floor may enter immediately)
@@ -83,15 +83,15 @@ NOTE: The Lift always starts on the ground floor (and people waiting on the grou
 
 ### Input
 
-- queues a list of queues of people for all floors of the building.
+- `queues` a list of queues of people for all floors of the building.
 - The height of the building varies
 - 0 = the ground floor
 - Not all floors have queues
 - Queue index [0] is the "head" of the queue
 - Numbers indicate which floor the person wants go to
-- capacity maximum number of people allowed in the lift
+- `capacity` maximum number of people allowed in the lift
 
-Parameter validation - All input parameters can be assumed OK. No need to check for things like:
+*Parameter validation* - All input parameters can be assumed OK. No need to check for things like:
 
 - People wanting to go to floors that do not exist
 - People wanting to take the Lift to the floor they are already on
