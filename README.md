@@ -1,2 +1,3 @@
 # codewars
-[@Codewars](https://www.codewars.com/) Kata solutions 
+
+[@Codewars](https://www.codewars.com/) solutions
